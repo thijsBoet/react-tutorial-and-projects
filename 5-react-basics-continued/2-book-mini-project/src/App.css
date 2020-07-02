@@ -1,0 +1,9 @@
+.book{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column: 1rem;
+  margin: 2rem 0;
+}
+.book-cover {
+  margin: 1rem;
+}
