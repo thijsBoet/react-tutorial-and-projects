@@ -25,18 +25,22 @@ import * as data from './data'
 
 // class based component use when state is needed
 
-class App extends Component {
-  render() {
-    return (
-      <section>
-        <Banner/>
-        <p>{name}</p>
-        <p>{age}</p>
-        <p>{person.name}</p>
-        <p>{person.age}</p>
-      </section>
-    );
-  }
-}
+// class App extends Component {
+//   render() {
+//     return (
+//       <section>
+//         <h1>APP</h1>
+//       </section>
+//     );
+//   }
+// }
+
+import Booklist from './Booklist';
+
+const App = () => (
+  <section>
+    <Booklist/>
+  </section>
+);
 
 export default App;

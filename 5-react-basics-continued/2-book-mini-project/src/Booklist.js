@@ -7,12 +7,14 @@ export default class Booklist extends Component {
     super(props);
     this.state ={
       books: booksData
-
     };
   }
 
-  handleDelete = () => {
-    console.log('I am from parent component')
+  handleDelete = (id) => {
+    const sortedBooks = this.state.books.filter(book => book.id !== id);
+    this.setState({
+      books: sortedBooks
+    })
   }
 
   render() {
