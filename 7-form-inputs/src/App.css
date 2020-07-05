@@ -1,0 +1,19 @@
+form {
+  margin: 2rem;
+}
+input{
+  display: block;
+  margin: 0.5rem;
+
+}
+button{
+  display: block;
+  margin: 0.5rem;
+}
+h1{
+  display: block;
+  margin-left: 2.5rem;
+}
+.count-btn {
+  display:inline;
+}

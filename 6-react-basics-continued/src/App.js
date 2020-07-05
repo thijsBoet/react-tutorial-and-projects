@@ -2,10 +2,9 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import './App.scss';
 
-
-const Person = ({img, name, age}) => {
+const Person = ({ person: {id, img, name, age }}) => {
   return (
-    <a href="#">
+    <a href="#" id={id}>
       <article className="person-info">
         <img src={img} alt={name} />
         <span className="person-name">{name}</span>
@@ -13,7 +12,7 @@ const Person = ({img, name, age}) => {
       </article>
     </a>
   );
-}
+};
 
 // prop types are installed via separate module
 // yarn add prop-types --save-dev
@@ -21,19 +20,21 @@ const Person = ({img, name, age}) => {
 // array, bool, func, number, object, string, symbol
 // can add isRequired to prevent empty values
 Person.propTypes = {
-  id: PropTypes.number.isRequired,
-  img: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  age: PropTypes.number.isRequired,
+  person:PropTypes.shape ({
+    img: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
+  }),
 };
 
 // values inserted when value is empty
 Person.defaultProps = {
   img: "https://randomuser.me/api/portraits/med/men/6.jpg",
   name: "james doe",
-  age: 34,
+  age: 27,
   info: "default info about person"  
 };
+
 class PersonList extends Component {
   state = {
     people: [
@@ -82,10 +83,8 @@ class PersonList extends Component {
         {
           this.state.people.map(person => (
             <Person
-              key={person.id} 
-              img={person.img} 
-              name={person.name} 
-              age={person.age}
+              id={person.id} 
+              person={person}
             />
           ))
         }
