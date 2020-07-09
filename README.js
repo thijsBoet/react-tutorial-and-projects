@@ -1,9 +1,11 @@
 # react-tutorial-and-projects
 
 -rfc => functional component
-stateless functional component always returns JSX
+stateless functional component
+always returns JSX
 
 ES6, Nested Components and React Tools
+
 ```javascript
 const Person = () => <h2>John Doe</h2>
 const Message = () => <p>This is a message</p>
