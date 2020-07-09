@@ -19,8 +19,8 @@ const Message = () => <p>This is a message</p>
 <Component/>
 ```
 
-- properties in quotes using JSX e.g.
 ```javascript
+properties in quotes using JSX e.g.
 <h1 style={{ fontSize: "2rem", color: 'red' }}>Nikola Tesla</h1>
 ```
 
