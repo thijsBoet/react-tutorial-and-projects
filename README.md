@@ -17,10 +17,7 @@ const Message = () => <p>This is a message</p>
 ```javascript 
 <Component/>
 ```
-- properties in quotes using JSX e.g.
-```javascript
-<h1 style={{ fontSize: "2rem", color: 'red' }}>Nikola Tesla</h1>
-```
+- properties in quotes using JSX e.g.```javascript<h1 style={{ fontSize: "2rem", color: 'red' }}>Nikola Tesla</h1>```
 - variables can only be created before the return statement
 ```javascript
 function Person() {
