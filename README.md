@@ -34,7 +34,7 @@ function Person() {
 ```
 - Use curly brackets to go in to { javascript } mode
 ```javascript
-<h2>{`${person.firstName} ${personlastName}`}</h2>
+<h2>{`${person.firstName} ${person.lastName}`}</h2>
 ```
 
 ---
@@ -47,11 +47,16 @@ function Person() {
 import parent from '.component/parentmodule'
 this.props.person.name
 ```
+- Functions can be passed in the same methods
+- Use arrow functions to pass arguments through methods without instantly running the method
+```javascript
+<button type="button" onClick={() => handleDelete(id)}>Delete</button>
+```
 - Use destructuring to create shorter variables
 ```javascript
-const { name, age, sex} = this.props.person
+const { name, age, sex } = this.props.person
 ```
-- The content between the opening and the closing Tag are name children
+- The content between the opening and the closing Tag are named children and are passed under this name to child component
 ```javascript
 <Person person={friends[0]}>
   {/* props.children */}
@@ -67,4 +72,25 @@ const { name, age, sex} = this.props.person
 - Must always pass a fixed key value when iterating as reference. Never use index if reference may be ever be needed.
 
 ---
-### state
+### STATE
+- Props are read only. To create variables, they must be declared in the state object.
+```javascript
+state = {
+  address: 'Mainstreet 15',
+  age: 56,
+}
+```
+- State can only be set in the head of a react class component (rcc)
+```javascript
+  export default class componentName extends Component {
+    state = {}
+  }
+}
+```
+- State values cannot be accessed directly (this.state.age = 12). The setState method must be used
+```javascript
+this.setState({
+  address: 'Sunset Drive 115',
+  age: 57,
+});
+```
