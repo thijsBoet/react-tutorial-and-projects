@@ -13,15 +13,15 @@ const Message = () => <p>This is a message</p>
 
 - returns single element like a nested div / section / article
 - use camelCase for html attribute => onClick => className e.g. className= instead of class=
-Close every element e.g. 
+*Close every element e.g.*
 ```javascript 
 <Component/>
 ```
-Properties in quotes using JSX e.g.
+*Properties in quotes using JSX e.g.*
 ```javascript
 <h1 style={{ fontSize: "2rem", color: 'red' }}>Nikola Tesla</h1>
 ```
-Variables can only be created before the return statement
+*Variables can only be created before the return statement*
 ```javascript
 function Person() {
   const name = 'Nikola Tesla'
@@ -30,7 +30,7 @@ function Person() {
   );
 }
 ```
-Use curly brackets to go in to { javascript } mode
+*Use curly brackets to go in to { javascript } mode*
 ```javascript
 <h2>{`${person.firstName} ${personlastName}`}</h2>
 ```
