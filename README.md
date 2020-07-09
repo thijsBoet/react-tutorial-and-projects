@@ -13,11 +13,17 @@ const Message = () => <p>This is a message</p>
 
 - returns single element like a nested div / section / article
 - use camelCase for html attribute => onClick => className e.g. className= instead of class=
+
 - close every element e.g. 
 ```javascript 
 <Component/>
 ```
-- properties in quotes using JSX e.g.```javascript<h1 style={{ fontSize: "2rem", color: 'red' }}>Nikola Tesla</h1>```
+
+- properties in quotes using JSX e.g.
+```javascript
+<h1 style={{ fontSize: "2rem", color: 'red' }}>Nikola Tesla</h1>
+```
+
 - variables can only be created before the return statement
 ```javascript
 function Person() {
@@ -27,7 +33,8 @@ function Person() {
   );
 }
 ```
+
 - use curly brackets to go in to { javascript } mode
 ```javascript
-<h2>{`${person.firstName} ${person.lastName}`}</h2>
+<h2>{`${person.firstName} ${personlastName}`}</h2>
 ```
