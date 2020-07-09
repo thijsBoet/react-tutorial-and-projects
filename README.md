@@ -1,5 +1,7 @@
 # React Tutorials and Projects
 
+---
+### FUNCTIONAL COMPONENT
 rfc => functional component
 stateless functional component always returns JSX (no longer stateless with Hooks)
 
