@@ -110,3 +110,51 @@ this.setState({
   age: 57,
 });
 ```
+
+---
+### HOOKS 
+- Must import { useState } instead of { Component }
+~~import React, { Component } from 'react';~~
+```javascript
+import React, { useState } from 'react';
+});
+```
+- useState() instead of state = {} in declaring state.
+- useState can also be assigned to a variable
+```javascript
+const stateArray = useState({
+    persons: [
+      { name: 'Max', age: 28 }
+    ],
+  })
+```
+- Arrays and Objects can be destructured into [variable]State and set[variable]State variable
+```javascript
+const [personsState, setPersonsState] = useState({
+    persons: [
+      { name: 'Max', age: 28 }
+    ],
+  })
+```
+- Instead this.state for properties use the destructured personState
+~~this.state.person[0]~~
+```javascript
+personState.person[0];
+```
+- Instead this.setState use the destructured SetPersonState
+~~this.state.person[0]~~
+```javascript
+SetPersonState({
+  person: [
+    { name: "Maximilian", age: 28 }
+  ]
+});
+```
+- SetPersonState deletes/replaces old state, make sure to copy all future necessary STATE data
+```javascript
+SetPersonState({
+  person: [
+    { name: "Maximilian", age: 28 }
+  ],
+  otherState: personsState.otherState
+});
