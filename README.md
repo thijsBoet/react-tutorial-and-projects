@@ -2,11 +2,13 @@
 
 ---
 ### COMPONENTS
-rfc => functional component
-rcc => class component
-stateless functional component always returns JSX (no longer stateless with Hooks).
-
-Use Capitalized names for components, lowercase are reserved for JSX HTML syntax
+- Components are reusable and configurable
+- rfc => functional component
+- rcc => class component
+- There are stateful (DO manage state) and stateless components (DON'T manage state)
+- Prefer stateless components when state is not needed. They are maintainable and are more performant.
+- Stateless functional component only returns JSX (can now also manage state with Hooks).
+- Use Capitalized names for components, lowercase are reserved for JSX HTML syntax
 
 ES6, Nested Components and React Tools.
 ```javascript
@@ -23,7 +25,6 @@ const style = {
   backgroundColor: 'white'
 }
 ```
-- Components are reusable and configurable
 
 ---
 ### JSX RULES
@@ -38,6 +39,13 @@ const style = {
 - Properties in quotes using JSX e.g.
 ```javascript
 <h1 style={{ fontSize: "2rem", color: 'red' }}>Nikola Tesla</h1>
+```
+- Styles can also be imported as a variable or as a module.
+```javascript
+const style = { backgroundColor : "white", }
+<button style={style}/>
+
+import './App.css'
 ```
 - Variables can only be created before the return statement.
 ```javascript
