@@ -166,3 +166,10 @@ SetPersonState({
   ],
   otherState: personsState.otherState
 });
+```
+---
+### DEBUGGING
+- Go through your code step by step
+- Use breakpoints Chrome DevTools => Sources
+- Check state React DevTools
+- Write tests
