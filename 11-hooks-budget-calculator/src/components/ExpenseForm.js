@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ExpenseForm = () => {
+const ExpenseForm = () => {
   return (
     <div>
       ExpenseForm
@@ -8,4 +8,4 @@ export const ExpenseForm = () => {
   )
 }
 
-export default ExpenseForm;
+export default ExpenseForm

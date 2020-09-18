@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Alert = () => {
+const Alert = () => {
   return (
     <div>
       Alert
@@ -8,4 +8,4 @@ export const Alert = () => {
   )
 }
 
-export default Alert;
+export default Alert
