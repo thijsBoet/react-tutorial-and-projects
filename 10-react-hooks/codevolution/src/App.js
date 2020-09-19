@@ -1,27 +1,38 @@
 import React from 'react';
 import ClassCounter from './components/ClassCounter';
 import ClassCounterTwo from './components/ClassCounterTwo';
+import ClassUseEffect from './components/ClassUseEffect';
+
 
 import './App.css';
 import HookCounter from './components/HookCounter';
-import HookCounterTwo from './components/HookCounterTwo'
-import HookCounterThree from './components/HookCounterThree'
+import HookCounterPrevState from './components/HookCounterPrevState'
+import HookCounterObject from './components/HookCounterObject'
+import HookCounterArray from './components/HookCounterArray'
+import HookUseEffect from './components/HookUseEffect'
+
 
 function App() {
 
   return (
     <main className="App">
-      <h3>Class Counter</h3>
+      <h4>Class Counter</h4>
       <ClassCounter />
-      <h3>Hook Counter</h3>
+      <h4>Hook Counter</h4>
       <HookCounter />
-      <h3>Class Counter Two</h3>
+      <h4>Class Counter Two</h4>
       <ClassCounterTwo />
-      <h3>Hook Counter Two</h3>
-      <HookCounterTwo />
-      <h3>Hook Counter Three</h3>
-      <HookCounterThree />
-    </main>
+      <h4>Hook Counter PrevState</h4>
+      <HookCounterPrevState />
+      <h4>Hook Counter Object</h4>
+      <HookCounterObject />
+      <h4>Hook Counter Array</h4>
+      <HookCounterArray />
+      <h4>Class useEffect</h4>
+      <ClassUseEffect />
+      <h4>Hook useEffect</h4>
+      <HookUseEffect/>
+    </main>  
   )
 }
 
