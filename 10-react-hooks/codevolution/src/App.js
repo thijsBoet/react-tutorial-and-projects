@@ -2,6 +2,7 @@ import React from 'react';
 import ClassCounter from './components/ClassCounter';
 import ClassCounterTwo from './components/ClassCounterTwo';
 import ClassUseEffect from './components/ClassUseEffect';
+import ClassMouse from './components/ClassMouse'
 
 
 import './App.css';
@@ -10,6 +11,7 @@ import HookCounterPrevState from './components/HookCounterPrevState'
 import HookCounterObject from './components/HookCounterObject'
 import HookCounterArray from './components/HookCounterArray'
 import HookUseEffect from './components/HookUseEffect'
+import HookMouse from './components/HookMouse'
 
 
 function App() {
@@ -31,9 +33,13 @@ function App() {
       <h4>Class useEffect</h4>
       <ClassUseEffect />
       <h4>Hook useEffect</h4>
-      <HookUseEffect/>
-    </main>  
-  )
+      <HookUseEffect />
+      <h4>Class MouseMove</h4>
+      <ClassMouse />
+      <h4>Hooks MouseMove</h4>
+      <HookMouse />
+    </main>
+  );
 }
 
 export default App;
