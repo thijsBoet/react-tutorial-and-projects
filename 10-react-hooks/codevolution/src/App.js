@@ -1,21 +1,27 @@
 import React from 'react';
+
 import ClassCounter from './components/ClassCounter';
 import ClassCounterTwo from './components/ClassCounterTwo';
 import ClassUseEffect from './components/ClassUseEffect';
-import ClassMouse from './components/ClassMouse'
+import ClassMouse from './components/ClassMouse';
 import ClassIntervalCounter from "./components/ClassIntervalCounter";
 
 
 import './App.css';
 import HookCounter from './components/HookCounter';
-import HookCounterPrevState from './components/HookCounterPrevState'
-import HookCounterObject from './components/HookCounterObject'
-import HookCounterArray from './components/HookCounterArray'
-import HookUseEffect from './components/HookUseEffect'
-import HookMouse from './components/HookMouse'
+import HookCounterPrevState from './components/HookCounterPrevState';
+import HookCounterObject from './components/HookCounterObject';
+import HookCounterArray from './components/HookCounterArray';
+import HookUseEffect from './components/HookUseEffect';
+import HookMouse from './components/HookMouse';
 import MouseContainer from "./components/MouseContainer";
 import HookIntervalCounter from "./components/HookIntervalCounter";
 
+import DataFetching from './components/DataFetching';
+import ComponentC from './components/ComponentC'
+
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 
 function App() {
 
@@ -47,6 +53,14 @@ function App() {
       <ClassIntervalCounter />
       <h4>Hook Interval Counter</h4>
       <HookIntervalCounter />
+      <h4>Data Fetching</h4>
+      <DataFetching />
+      <h4>Context</h4>
+      <UserContext.Provider value={"Matthijs Boet"}>
+        <ChannelContext.Provider value={'Codevolution'}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
     </main>
   );
 }
