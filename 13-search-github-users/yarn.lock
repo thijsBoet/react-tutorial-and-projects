@@ -5120,7 +5120,7 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-fusioncharts@^3.15.1-sr.1:
+fusioncharts@^3.15.3:
   version "3.15.3"
   resolved "https://registry.yarnpkg.com/fusioncharts/-/fusioncharts-3.15.3.tgz#8211deed540a3a0629b667344008b8c9a713ab60"
   integrity sha512-2B94xRGf9VMa1A+phptgL02qtCLyqZjQnpQB1IwyBsF+VoH31rSFMeaeJey+dRv3IKPtrk1VTtWBa0h3+t3l0g==
@@ -9079,7 +9079,7 @@ react-fusioncharts@^3.1.2:
   dependencies:
     uuid "^3.2.1"
 
-react-icons@^3.10.0:
+react-icons@^3.11.0:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.11.0.tgz#2ca2903dfab8268ca18ebd8cc2e879921ec3b254"
   integrity sha512-JRgiI/vdF6uyBgyZhVyYJUZAop95Sy4XDe/jmT3R/bKliFWpO/uZBwvSjWEdxwzec7SYbEPNPck0Kff2tUGM2Q==
